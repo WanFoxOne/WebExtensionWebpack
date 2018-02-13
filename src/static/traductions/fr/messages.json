@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "Bloquer les contenus conspirationnistes sur YouTube.",
+    "description": "Nom de l'extension."
+  },
+
+  "extensionDescription": {
+    "message": "Affiche une notification lorsque l'utilisateur clique sur des liens.",
+    "description": "Description de l'extension."
+  }
+}

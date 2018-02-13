@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "Block conspiracy contents on YouTube.",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Shows a notification when the user clicks on links.",
+    "description": "Description of the extension."
+  }
+}

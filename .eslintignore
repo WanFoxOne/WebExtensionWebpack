@@ -1,0 +1,5 @@
+/addon/
+/node_modules/
+!/src/background/
+!/src/popup/
+!/webpack.config.js

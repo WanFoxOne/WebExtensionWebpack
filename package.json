@@ -1,0 +1,56 @@
+{
+  "name": "block_conspiracy",
+  "version": "0.1",
+  "description": "Community extension to block conspiracy contents on YouTube.",
+  "author": {
+    "name": "WanFoxOne",
+    "email": "contact@eadar.fr",
+    "url": "https://eadar.fr/"
+  },
+  "private": true,
+  "scripts": {
+    "build": "webpack -w -v --display-error-details --progress --colors",
+    "build:watch": "webpack -w --display-error-details --progress --colors --watch",
+    "start": "web-ext run --no-reload --browser-console --source-dir ./addon/",
+    "start:watch": "web-ext run --browser-console --source-dir ./addon/",
+    "nexus": "concurrently --kill-others-on-fail \"webpack -w -v --display-error-details --progress --colors\" \"web-ext run --no-reload --browser-console --source-dir ./addon/\"",
+    "nexus:watch": "concurrently --kill-others-on-fail \"webpack -w --display-error-details --progress --colors --watch\" \"web-ext run --browser-console --source-dir ./addon/\"",
+    "deploy": "webpack -p"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "left-pad": "^1.1.1",
+    "sharp": "^0.19.0",
+    "uikit": "^3.0.0-beta.40"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "babel-loader": "8.0.0-beta.0",
+    "concurrently": "^3.5.1",
+    "css-loader": "^0.28.9",
+    "eslint": "^4.17.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-css-modules": "^2.7.5",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "html-webpack-exclude-assets-plugin": "^0.0.5",
+    "html-webpack-plugin": "^2.30.1",
+    "ncp": "^2.0.0",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1",
+    "webpack": "^2.3.2",
+    "webpack-extension-manifest-plugin": "^0.4.1"
+  },
+  "build_parameters": {
+    "name": "BlockConspiracy",
+    "icon_sizes": [
+      16,
+      32,
+      48,
+      64,
+      128
+    ]
+  }
+}
